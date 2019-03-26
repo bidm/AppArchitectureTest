@@ -15,7 +15,6 @@
 		0A1DE7FD224A14A7007944CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE7FC224A14A7007944CA /* main.m */; };
 		0A1DE807224A14A8007944CA /* AppArchTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE806224A14A8007944CA /* AppArchTestTests.m */; };
 		0A1DE812224A14A8007944CA /* AppArchTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE811224A14A8007944CA /* AppArchTestUITests.m */; };
-		0A1DE821224A1577007944CA /* BDMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE820224A1577007944CA /* BDMRouter.m */; };
 		0A1DE824224A15AB007944CA /* BDMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE823224A15AB007944CA /* BDMBaseViewController.m */; };
 		0A1DE82C224A18A3007944CA /* BDMModuleBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE82B224A18A3007944CA /* BDMModuleBVC.m */; };
 		0A1DE82F224A18B2007944CA /* BDMModuleAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE82E224A18B2007944CA /* BDMModuleAVC.m */; };
@@ -26,6 +25,7 @@
 		0A1DE843224A19C0007944CA /* BDMModuleCEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE842224A19C0007944CA /* BDMModuleCEnter.m */; };
 		0A1DE846224A19CF007944CA /* BDMModuleCExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE845224A19CF007944CA /* BDMModuleCExport.m */; };
 		0A1DE849224A19E3007944CA /* BDMModuleCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE848224A19E3007944CA /* BDMModuleCVC.m */; };
+		0A1DE850224A271C007944CA /* BDMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1DE84E224A271C007944CA /* BDMRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 		0A1DE80D224A14A8007944CA /* AppArchTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppArchTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1DE811224A14A8007944CA /* AppArchTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppArchTestUITests.m; sourceTree = "<group>"; };
 		0A1DE813224A14A8007944CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A1DE81F224A1577007944CA /* BDMRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMRouter.h; sourceTree = "<group>"; };
-		0A1DE820224A1577007944CA /* BDMRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMRouter.m; sourceTree = "<group>"; };
 		0A1DE822224A15AB007944CA /* BDMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMBaseViewController.h; sourceTree = "<group>"; };
 		0A1DE823224A15AB007944CA /* BDMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMBaseViewController.m; sourceTree = "<group>"; };
 		0A1DE82A224A18A3007944CA /* BDMModuleBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMModuleBVC.h; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		0A1DE84A224A19F3007944CA /* BDMModuleBHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMModuleBHeader.h; sourceTree = "<group>"; };
 		0A1DE84B224A1A04007944CA /* BDMModuleCHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMModuleCHeader.h; sourceTree = "<group>"; };
 		0A1DE84C224A1A0F007944CA /* BDMModuleAHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMModuleAHeader.h; sourceTree = "<group>"; };
+		0A1DE84E224A271C007944CA /* BDMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDMRouter.m; sourceTree = "<group>"; };
+		0A1DE84F224A271C007944CA /* BDMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDMRouter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +143,12 @@
 				0A1DE7F0224A14A5007944CA /* ViewController.h */,
 				0A1DE7F1224A14A5007944CA /* ViewController.m */,
 				0A1DE830224A18C4007944CA /* Header.h */,
+				0A1DE822224A15AB007944CA /* BDMBaseViewController.h */,
+				0A1DE823224A15AB007944CA /* BDMBaseViewController.m */,
+				0A1DE84D224A271C007944CA /* Router */,
 				0A1DE826224A1862007944CA /* ModuleA */,
 				0A1DE825224A1862007944CA /* ModuleB */,
 				0A1DE83F224A19A1007944CA /* ModuleC */,
-				0A1DE822224A15AB007944CA /* BDMBaseViewController.h */,
-				0A1DE823224A15AB007944CA /* BDMBaseViewController.m */,
-				0A1DE81F224A1577007944CA /* BDMRouter.h */,
-				0A1DE820224A1577007944CA /* BDMRouter.m */,
 				0A1DE7F3224A14A5007944CA /* Main.storyboard */,
 				0A1DE7F6224A14A7007944CA /* Assets.xcassets */,
 				0A1DE7F8224A14A7007944CA /* LaunchScreen.storyboard */,
@@ -217,6 +216,15 @@
 				0A1DE848224A19E3007944CA /* BDMModuleCVC.m */,
 			);
 			path = ModuleC;
+			sourceTree = "<group>";
+		};
+		0A1DE84D224A271C007944CA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A1DE84E224A271C007944CA /* BDMRouter.m */,
+				0A1DE84F224A271C007944CA /* BDMRouter.h */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,9 +365,9 @@
 				0A1DE7FD224A14A7007944CA /* main.m in Sources */,
 				0A1DE83C224A1927007944CA /* BDMModuleBExport.m in Sources */,
 				0A1DE846224A19CF007944CA /* BDMModuleCExport.m in Sources */,
+				0A1DE850224A271C007944CA /* BDMRouter.m in Sources */,
 				0A1DE833224A18FB007944CA /* BDMModuleAEnter.m in Sources */,
 				0A1DE82C224A18A3007944CA /* BDMModuleBVC.m in Sources */,
-				0A1DE821224A1577007944CA /* BDMRouter.m in Sources */,
 				0A1DE7EF224A14A5007944CA /* AppDelegate.m in Sources */,
 				0A1DE843224A19C0007944CA /* BDMModuleCEnter.m in Sources */,
 				0A1DE839224A191E007944CA /* BDMModuleAExport.m in Sources */,
