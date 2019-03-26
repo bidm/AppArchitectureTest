@@ -30,6 +30,7 @@
     });
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     [btn setBackgroundColor:[UIColor redColor]];
+    [btn setTitle:@"ModuleB" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
