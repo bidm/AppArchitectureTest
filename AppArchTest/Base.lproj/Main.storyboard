@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mxU-mY-9xC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-U8-pl8">
+                                <rect key="frame" x="167" y="188.5" width="41" height="30"/>
+                                <state key="normal" title="模块A"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjk-Mg-WTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-Pn-gtJ">
+                                <rect key="frame" x="167" y="318.5" width="41" height="30"/>
+                                <state key="normal" title="模块B"/>
+                                <connections>
+                                    <action selector="btnBClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8eM-7d-9TC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-ie-D89">
+                                <rect key="frame" x="166.5" y="448.5" width="42" height="30"/>
+                                <state key="normal" title="模块C"/>
+                                <connections>
+                                    <action selector="btnCClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOZ-md-W1b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ole-ie-D89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8yD-hO-QdV"/>
+                            <constraint firstItem="4Gb-Pn-gtJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMA-FN-vdy"/>
+                            <constraint firstItem="lZc-U8-pl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NVP-ck-BRX"/>
+                            <constraint firstItem="4Gb-Pn-gtJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RGP-gt-DfI"/>
+                            <constraint firstItem="Ole-ie-D89" firstAttribute="top" secondItem="4Gb-Pn-gtJ" secondAttribute="bottom" constant="100" id="lCH-Bg-WTw"/>
+                            <constraint firstItem="4Gb-Pn-gtJ" firstAttribute="top" secondItem="lZc-U8-pl8" secondAttribute="bottom" constant="100" id="owi-2E-Agi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Olt-5Z-zCY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HS8-rc-CR5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxU-mY-9xC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ma-5d-iOg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZH4-Es-HtF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKq-Tp-STd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="133"/>
+        </scene>
+    </scenes>
+</document>
